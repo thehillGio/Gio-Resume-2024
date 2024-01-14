@@ -1,0 +1,596 @@
+/*default layout through all browsers*/
+* {
+    /*margin: 0.1em;*/
+}
+
+body {
+    line-height: 1;
+    text-align: center;
+}
+input, button, textarea, select{
+    font: inherit;
+}
+
+:root{
+    --sizeS : 12px;
+    --sizeM : 14px;
+    --sizeL : 16px;
+    --font : "Times New Roman", Arial, sans-serif;
+    --size : var(--sizeL);
+    --colorD : darkgrey;
+    --colorL : ghostwhite;
+    color: var(--colorL);
+    font-family: var(--font);
+    font-size: var(--size);
+    background-color: black;
+    text-align: center;
+    /*display: flex;*/
+
+}
+
+/*Adjusting size based on media width*/
+@media screen{
+
+}
+@media screen and(max-width: 800px) {
+    :root{
+        --size : var(--sizeM);
+    }
+}
+
+@media screen and(max-width: 600px) {
+    :root{
+        --size : var(--sizeS);
+    }
+
+}
+
+/*Main Page*/
+.main_page_header{
+    background-color: black;
+    border-style: solid;
+    border-left-color: var(--colorL);
+    border-right-color: var(--colorL);
+    border-width: 0.1em;
+    padding-left: 2em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    font-family: "Times New Roman", sans-serif;
+    font-size: x-large;
+    text-align: left;
+    display: flex;
+}
+.main_page_header_1{
+    background-color: black;
+    /*border-style: solid;*/
+    /*border-left-color: var(--colorL);*/
+    /*border-right-color: var(--colorL);*/
+    /*border-width: 0.1em;*/
+    padding-left: 2em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    font-family: "Times New Roman", sans-serif;
+    font-size: x-large;
+    text-align: left;
+}
+
+.menu_div{
+    margin-left: 40em;
+}
+.header_menu_item{
+    width: 35px;
+    height: 5px;
+    background-color: grey;
+    margin: 6px 0;
+    border-radius: 0.6em;
+}
+
+.header_selector{
+    text-align: right;
+    position: relative;
+    font-family: "Times New Roman", sans-serif;
+    /*display: none;*/
+    border-color: white;
+    cursor: pointer;
+    font-size: var(--sizeL);
+    display: compact;
+}
+
+option{
+    position: absolute;
+    background-color: black;
+    color: white;
+}
+
+.header_selector:after{
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+
+.main_banner{
+    display: flex;
+    background-color: black;
+    border-left: solid;
+    border-right: solid;
+    border-radius: 0.6em;
+    border-color: black;
+}
+
+.main_banner_fieldset{
+    color: black;
+    background-color: lightgrey;
+    text-align: center;
+    border-color: white;
+    font-family: "Times New Roman", sans-serif;
+    padding: 5em;
+    border-left: solid;
+    border-radius: 0.6em;
+}
+.main_page_prof_pic{
+    border-radius: 0.6em;
+}
+
+h2{
+    border-left: white;
+    border-right: white;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-radius: 0.6em;
+    margin: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.main_fieldset_quote{
+    margin-top: 2em;
+    font-family: var(--font);
+
+}
+
+.main_contact_button{
+    border: solid;
+    border-radius: 0.9em;
+    border-color: black;
+    text-decoration: none;
+    font-family: "Times New Roman", sans-serif;
+    color: black;
+    margin-top: 2em;
+
+}
+
+.main_contact_button:hover{
+    border-left: solid;
+    border-right: solid;
+    border-radius: 0.9em;
+    border-color: black;
+    text-decoration: none;
+    font-family: "Times New Roman", sans-serif;
+    background-color: black;
+    color: white;
+    margin-top: 2em;
+}
+
+.main_contact_button_anchor{
+    text-decoration: none;
+}
+
+/*---------------------------Main Page Summary-------------------------*/
+
+.main_summary{
+    background-color: black;
+    padding: 2em;
+    margin-top: 1em;
+    border-left: solid;
+    border-right: solid;
+    border-radius: 0.6em;
+}
+
+.summary_description:hover{
+    font-size: 16.3px;
+    border-radius: 0.4em;
+    border-right: solid;
+    border-left: solid;
+    border-width: 0.1em;
+    font-family: "Times New Roman", sans-serif;
+}
+
+.main_page_overview{
+    text-align: left;
+    border-color: black;
+    border-left: none;
+    border-right: none;
+    padding: 1em;
+}
+.main_page_overview_content{
+    text-align: left;
+    padding-left: 3em;
+    font-size: var(--sizeS);
+    display: flex;
+}
+
+.main_page_overview_years_of_experience{
+    font-family: "Bodoni MT Black", "Times New Roman", sans-serif;
+    font-size: x-large;
+    margin-left: 2em;
+    font-style: normal;
+
+}
+
+/*--------------------------------------------Work Experience--------------------------------------------*/
+.main_page_work_experience{
+    background-color: lightgrey;
+    border-radius: 0.6em;
+    color: black;
+    padding-bottom: 1em;
+}
+
+.main_page_work_experience_heading{
+    border-color: lightgrey;
+    margin: 2em;
+    text-decoration: underline;
+    padding-top: 2em;
+
+}
+
+.main_page_work_experience_block{
+    border-color: black;
+    border-radius: 0.6em;
+    border-width: 0.1em;
+    border-style: solid;
+    margin: 1em;
+}
+
+.main_page_work_experience_block_title{
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Engravers MT", "Times New Roman",sans-serif;
+    text-align: left;
+    margin-left: 2em;
+    font-size: large;
+
+}
+.main_page_work_experience_block_details{
+    text-align: left;
+    margin-left: 3em;
+    font-family: "Times New Roman", sans-serif;
+}
+
+.underline{
+    border-style: solid;
+    border-color: black;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.reason_for_leaving{
+    list-style: circle;
+    margin-left: -2em;
+    font-weight: bold;
+}
+
+li{
+    margin-top: 0.5em;
+}
+
+.main_page_work_experience_block_SM{
+    background-color: grey;
+    border-color: black;
+    border-radius: 0.6em;
+    border-style: solid;
+    border-width: 0.1em;
+    margin-top: 1em;
+    margin: 1em;
+    color: white;
+}
+
+/*---------------------------------------Education--------------------------------------*/
+
+.qualification_block , .qualification_block_3, .qualification_block_5{
+    background-color: white;
+    color: black;
+    border-radius: 1.5em;
+}
+
+.qualification_block_2 , .qualification_block_4 , .qualification_block_6{
+    background-color: ghostwhite;
+    color: black;
+    border-radius: 1.5em;
+}
+
+.study_facility{
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 1em;
+}
+
+/*---------------------------------------Skills-------------------------------------------*/
+
+.sub_headings{
+    text-align: left;
+    margin-left: 2em;
+    padding-top: 2em;
+    border-color: black;
+}
+
+.skills_table{
+    text-align: left;
+}
+
+.skills_column_1{
+    padding-top: 0.5em;
+    list-style: circle;
+}
+.skills_column_1:hover{
+    padding-top: 0.5em;
+    list-style: square;
+    color: crimson;
+}
+
+/*----------------------------------------Accomplishments---------------------------------*/
+
+.accomplishments_list{
+    text-align: left;
+    list-style: square;
+}
+
+.accomplishments_list_value{
+    margin-top: 1em;
+    font-size: 17px;
+}
+.accomplishments_list_value:hover{
+    margin-top: 1em;
+    font-size: 17px;
+    color: crimson;
+}
+
+.additional_info_values{
+    text-align: left;
+    margin-top: 1em;
+}
+
+.additional_info_values:hover{
+    text-align: left;
+    margin-top: 1em;
+    color: crimson;
+}
+
+/*-------------------------------------------Availability--------------------------------------*/
+
+.work_availability{
+    text-align: left;
+    margin-left: 2em;
+}
+
+.availability_table{
+
+    border-color: crimson;
+    border-radius: 0.6em;
+    border-width: 0.9em;
+    table-layout: fixed;
+    column-width: 5em;
+}
+
+.availability_table_div{
+    margin: 1em;
+    border-color: ghostwhite;
+    border-width: 0.1em;
+    border-style: solid;
+    border-radius: 0.6em;
+}
+
+.availability_table_row{
+    padding: 0.5em;
+}
+
+.availability_checked{
+    background-color: ghostwhite;
+}
+
+/*------------------------------------Contact----------------------------------*/
+
+.contact_me_section{
+    border-style: groove;
+    margin: 1em;
+    padding: 1em;
+    border-color: ghostwhite;
+    background-color: white;
+    color: black;
+
+}
+.contact_button{
+    border-radius: 0.6em;
+    border-style: ridge;
+    border-color: lightgrey;
+    margin-left: 15em;
+    margin-right: 15em;
+    background-color: grey;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: white;
+}
+.contact_button:hover{
+    border-radius: 0.6em;
+    border-style: ridge;
+    border-color: lightgrey;
+    margin-left: 15em;
+    margin-right: 15em;
+    background-color: black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: white;
+}
+
+.sub_contact_button_anchor{
+    text-decoration: none;
+    color: black;
+}
+
+/*--------------------------------------------Footer-------------------------------*/
+
+.footer_section{
+    text-align: left;
+    margin: 3em;
+}
+.footer_anchor{
+    text-decoration: none;
+    color: white;
+}
+
+.footer_anchor:hover{
+    /*text-decoration: underline;*/
+    color: blue;
+
+}
+.footer_image_IG{
+    padding-top: 1em;
+    padding-left: 1.5em;
+}
+
+.footer_IG_label{
+    margin-left: 0.5em;
+}
+
+.social_media_links{
+    display: flex;
+}
+
+/*---------------------------------------------Contact Page---------------------------------------------*/
+
+.contact_field{
+    /*text-align: center;*/
+    /*align-content: center;*/
+}
+.contact_main_field{
+    /*width: 50em;*/
+    /*text-align: center;*/
+    margin-top: 4em;
+    border-radius: 0.8em;
+}
+
+.contact_personal_info{
+    border-color: white;
+    border-style: solid;
+    border-radius: 0.6em;
+    border-width: 0.1em;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+}
+
+.field{
+    display: grid;
+    grid-template-columns: 15em 20em;
+    align-items: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.05em;
+    margin-left: 5em;
+    font-size: large;
+}
+
+.contact_header{
+    border-color: black;
+    text-align: left;
+}
+
+.contact_input_fields{
+    background-color: black;
+    border-radius: 0.6em;
+    color: white;
+}
+
+.contact_reason_heading{
+    text-align: left;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.contact_reason_checkbox{
+    text-align: left;
+}
+
+.contact_reason_checkbox_label{
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.contact_job_checkbox{
+    text-align: left;
+    margin-left: 4em;
+    margin-bottom: 1em;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.message_textarea{
+    margin-top: 3em;
+    width: 78em;
+    height: 10em;
+    background-color: white;
+    color: black;
+}
+
+.send_button{
+    background-color: grey;
+    border-right: solid;
+    border-left: solid;
+    border-radius: 0.8em;
+    margin-left: 10em;
+    margin-right: 10em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-style: ridge ;
+}
+
+.send_button:hover{
+    background-color: darkgrey;
+    border-right: solid;
+    border-left: solid;
+    border-radius: 0.8em;
+    margin-left: 10em;
+    margin-right: 10em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-style: ridge ;
+}
+
+.send_disclaimer{
+    color: lightgrey;
+    font-weight: lighter;
+
+}
+
+.select_date_time_dialog{
+    background: white;
+    border-radius: 0.6em;
+    border-style: ridge;
+    padding: 2em;
+}
+
+.schedule_meeting_dialog{
+    border-style: ridge;
+    border-radius: 0.6em;
+
+}
+
+#schedule_meeting_time_done_button{
+    border-radius: 0.6em;
+
+}
+
+.date_chosen{
+    color: lightgrey;
+}
+
+.job_chosen{
+    color: lightgrey;
+}
+
+.main_page_email{
+    margin: 3em;
+}
