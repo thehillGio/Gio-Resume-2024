@@ -45,75 +45,6 @@ input, button, textarea, select{
 
 }
 
-/*Main Page*/
-.main_page_header{
-    background-color: black;
-    border-style: solid;
-    border-left-color: var(--colorL);
-    border-right-color: var(--colorL);
-    border-width: 0.1em;
-    padding-left: 2em;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
-    font-family: "Times New Roman", sans-serif;
-    font-size: x-large;
-    text-align: left;
-    display: flex;
-}
-.main_page_header_1{
-    background-color: black;
-    /*border-style: solid;*/
-    /*border-left-color: var(--colorL);*/
-    /*border-right-color: var(--colorL);*/
-    /*border-width: 0.1em;*/
-    padding-left: 2em;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
-    font-family: "Times New Roman", sans-serif;
-    font-size: x-large;
-    text-align: left;
-}
-
-.menu_div{
-    margin-left: 40em;
-}
-.header_menu_item{
-    width: 35px;
-    height: 5px;
-    background-color: grey;
-    margin: 6px 0;
-    border-radius: 0.6em;
-}
-
-.header_selector{
-    text-align: right;
-    position: relative;
-    font-family: "Times New Roman", sans-serif;
-    /*display: none;*/
-    border-color: white;
-    cursor: pointer;
-    font-size: var(--sizeL);
-    display: compact;
-}
-
-option{
-    position: absolute;
-    background-color: black;
-    color: white;
-}
-
-.header_selector:after{
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
-}
-
-
 .main_banner{
     display: flex;
     background-color: black;
@@ -121,6 +52,7 @@ option{
     border-right: solid;
     border-radius: 0.6em;
     border-color: black;
+    margin-top: 5em;
 }
 
 .main_banner_fieldset{
